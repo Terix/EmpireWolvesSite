@@ -1,21 +1,9 @@
 <?php
-$founders = array();
-$content = 'http://via.placeholder.com/500x500';
-$founders['name1'] = $content;
-$founders['name2'] = $content;
+require_once 'functions.php';
 
-$cmdrs = array();
-$content = 'http://via.placeholder.com/300x300';
-$cmdrs['name1'] = $content;
-$cmdrs['name2'] = $content;
-$cmdrs['name3'] = $content;
-$cmdrs['name4'] = $content;
-$cmdrs['name5'] = $content;
-$cmdrs['name6'] = $content;
-$cmdrs['name7'] = $content;
-$cmdrs['name8'] = $content;
-$cmdrs['name9'] = $content;
-$cmdrs['name0'] = $content;
+$founders = getFounders();
+$cmdrs = getAvatars();
+
 ?>
 						<!-- About -->
 								<h2 class="major">I Comandanti</h2>
@@ -24,7 +12,7 @@ $cmdrs['name0'] = $content;
                             <?php
                             foreach ($founders as $name => $image) {
                                 echo '<div class="founders">'."\r\n";
-                                echo '<span class="image"><img src="'.$image.'" alt="" /></span>'."\r\n";
+                                echo '<span class="image"><img src="founders/'.$image.'" alt="" /></span>'."\r\n";
                                 echo '<span class="label">'.$name.'</span>'."\r\n";
                                 echo '</div>'."\r\n";
                             }
@@ -32,10 +20,10 @@ $cmdrs['name0'] = $content;
 							</div>
 							<div class="c-box">
                             <?php
-                            foreach ($cmdrs as $name => $image) {
+                            foreach ($cmdrs as $cmdr) {
                                 echo '<div class="cmdrs">'."\r\n";
-                                echo '<span class="image"><img src="'.$image.'" alt="" /></span>'."\r\n";
-                                echo '<span class="label">'.$name.'</span>'."\r\n";
+                                echo '<span class="image"><img src="cmdrs/'.$cmdr['file'].'" alt="" /></span>'."\r\n";
+                                echo '<span class="label">'.$cmdr['label'].'</span>'."\r\n";
                                 echo '</div>'."\r\n";
                             }
                             ?>

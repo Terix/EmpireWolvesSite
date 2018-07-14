@@ -45,7 +45,7 @@ foreach ($struct as $item => $data) {
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Empire Wolves. Original design: <a href="https://html5up.net">HTML5 UP</a>. Customization: <a href="https://inara.cz/cmdr/18693/" target="_black">Terix</a></p>
 					</footer>
 
 			</div>
